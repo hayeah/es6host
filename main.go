@@ -34,10 +34,12 @@ func main() {
 
 func serve() error {
 	s := &es6Server{
-		root: "./",
+		root: rootDir,
 	}
 
-	return http.ListenAndServe(":7777", s)
+	log.Println("Server listening:", serveAddr)
+	log.Println("Serving content from:", rootDir)
+	return http.ListenAndServe(serveAddr, s)
 }
 
 type es6Server struct {
