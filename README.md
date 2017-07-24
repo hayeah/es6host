@@ -2,6 +2,12 @@ Chrome [Canary supports ES6 modules](https://medium.com/dev-channel/es6-modules-
 
 This is a simple Go web server to support common ES6 app structure.
 
+# Install
+
+```
+go get -u github.com/hayeah/es6host
+```
+
 # Instruction
 
 Include the `index.js` of your app in `index.html`:
